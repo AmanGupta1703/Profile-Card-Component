@@ -73,7 +73,7 @@ body::after {
 
 /* Profile Card Banner */
 .profile-card-banner {
-  background-image: url(../images/bg-pattern-card.svg);
+  background-image: url(images/bg-pattern-card.svg);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   display: flex;
