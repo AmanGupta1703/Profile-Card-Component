@@ -30,8 +30,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://amangupta1703.github.io/Profile-Card-Component/]
+- Live Site URL: [https://github.com/AmanGupta1703/Profile-Card-Component]
 
 ## My process
 
@@ -85,5 +85,5 @@ body::after {
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Profile Card Component](https://github.com/AmanGupta1703/Profile-Card-Component)
 - Frontend Mentor - [@AmanGupta1703](https://www.frontendmentor.io/profile/AmanGupta1703)
