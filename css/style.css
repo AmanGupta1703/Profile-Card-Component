@@ -1,0 +1,156 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+/* Resetting the default style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+  --border-line: hsl(227, 10%, 46%, 0.2);
+  --font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Utility classes */
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+body::before {
+  content: url(../images/bg-pattern-top.svg);
+  position: absolute;
+  top: -525px;
+  left: -17%;
+  z-index: -1;
+}
+
+body {
+  background-color: var(--dark-cyan);
+  font-family: var(--font-family);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body::after {
+  content: url(../images/bg-pattern-bottom.svg);
+  position: absolute;
+  bottom: -650px;
+  right: -10%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+/* Profile Card Iten */
+.profile-card-item {
+  background-color: var(--white);
+  box-shadow: 7px -1px 10px 1px var(--dark-cyan);
+  border-radius: 20px;
+  width: 92%;
+  max-width: 386px;
+}
+
+/* Profile Card Banner */
+.profile-card-banner {
+  background-image: url(/images/bg-pattern-card.svg);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  height: 9rem;
+}
+
+.victor-img {
+  border: 4px solid var(--white);
+  border-radius: 100%;
+  position: relative;
+  top: 50px;
+}
+
+/* User Info */
+.user-info {
+  margin: 4rem 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-heading {
+  font-size: 1.2rem;
+}
+
+.user-age {
+  color: var(--dark-gray);
+  padding-left: 0.2rem;
+}
+
+.location {
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+}
+
+/* User Social Media Status */
+.user-social-media-status {
+  border-top: 2px solid var(--border-line);
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0 0.8rem;
+  padding: 6% 4%;
+}
+
+.followers-count,
+.likes-count,
+.photos-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.user-social-media-status span {
+  color: var(--dark-gray);
+  display: block;
+  font-size: 0.9rem;
+}
+
+/* Mobile  */
+@media (max-width: 375px) {
+  body::before {
+    content: url(../images/bg-pattern-top.svg);
+    position: absolute;
+    left: -213%;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  body::after {
+    content: url(../images/bg-pattern-bottom.svg);
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    right: -700px;
+  }
+ 
+}
